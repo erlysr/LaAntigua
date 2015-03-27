@@ -1,0 +1,17 @@
+#caja-h1{
+	background-color: white;
+}
+#caja-texto{
+	background-color: white;
+}
+header { 
+        background: url("../img/texturaroja.jpg"); 
+        height:130px;
+}
+header .logo{
+	width: 150px;
+}
+footer {
+ background: url("../img/texturaamarilla.jpg"); 
+ height: 200px;
+}
