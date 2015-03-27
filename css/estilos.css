@@ -4,6 +4,13 @@
 #caja-texto{
 	background-color: white;
 }
+body{
+	padding-bottom: 70px;
+	color: black;
+}
+h1, h2, h3, article{
+	background-color: white;
+}
 header { 
         background: url("../img/texturaroja.jpg"); 
         height:130px;
