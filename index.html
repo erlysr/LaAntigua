@@ -9,43 +9,54 @@
 	<link rel="shortcut icon" href="img/favicon_antigua.ico" type="image/x-icon"/>
 	<!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Parallax -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/parallax.js"></script>
+	<!-- Bootstrap -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+	<script>
+      $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+          $('#ios-notice').removeClass('hidden');
+          $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+        } else {
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        }
+      });
+    </script>
 </head>
 <body>
 	<header>
-		<figure>
-			<img class="logo" src="img/logo_antigua_800x694_trans.png" alt="Restaurante La Antigua - Tlalnepantla">
-		</figure>
-
-			<ol class="breadcrumb">
-				<li class="active"><a href="">BIENVENIDOS</a></li>
-				<li><a href="">UBICACIÓN</a></li>
-				<li><a href="">CONTACTO</a></li>
-				<li><a href="">PRIVACIDAD</a></li>
-			</ol>
-		
-		
+		<div class="row">
+			<div class="col col-xs-4"><img class="logo img-responsive" src="img/logo_antigua_150px_trans2.png" alt="Restaurante La Antigua - Tlalnepantla"></div>
+			<div class="col col-xs-1"></div>
+			<div class="col col-xs-7">
+				<ol class="breadcrumb menu navbar-right">
+					<li class="active"><a href="">BIENVENIDOS</a></li>
+					<li><a href="">UBICACIÓN</a></li>
+					<li><a href="">CONTACTO</a></li>
+					<li><a href="">PRIVACIDAD</a></li>
+				</ol>	
+			</div>
+		</div>
 	</header>
 
 <!-- PRIMERA SECCION -->
 	<section class="parallax-sec">
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="400" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
+				<h1 id="caja-h1">Restaurante</h1>
+				<p id="caja-texto">
+					Av. Gustavo Baz 2220, Col. Centro, Tlalnepantla, Estado de México<br>(55) 5390-6601, 5565-5025, 5390-5037 / <a href="">Reservaciones</a>
+				</p>
 		</div>
-
-
-		<h1 id="caja-h1">Restaurante</h1>
-		<p id="caja-texto">
-			Av. Gustavo Baz 2220, Col. Centro, Tlalnepantla, Estado de México<br>(55) 5390-6601, 5565-5025, 5390-5037 / <a href="">Reservaciones</a>
-		</p>
-
 	</section>
-	<section class="tradicion">
+	<section class="tradicion-sec">
 		<div class="row">
 			<div class="col col-xs-12 col-md-6">
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -354,7 +365,7 @@
 	</section>
 	<!-- SEGUNDA SECCION -->
 	<section class="parallax-sec">
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="200" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/vista_pareja_1600_low.jpg" data-natural-width="1400" data-natural-height="900">
 		</div>
 
 
@@ -403,7 +414,7 @@
 	</div>
 <!-- TERCERA SECCION -->
 	<section class="parallax-sec">
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="200" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/vista_meseros_1600_low.jpg" data-natural-width="1400" data-natural-height="900">
 		</div>
 		<h2 id="caja-h1">Buffet</h2>
 	</section>
@@ -594,7 +605,7 @@
 	</article>
 	<!-- CUARTA SECCION -->
 	<section class="parallax-sec">
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="200" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/vista_trio_1330_low.jpg" data-natural-width="1400" data-natural-height="900">
 		</div>
 		<h2 id="caja-h1">AMBIENTE Y MÚSICA EN VIVO</h2>
 	</section>
@@ -728,7 +739,7 @@
 	</div>
 	<!-- QUINTA SECCION EVENTOS-->
 	<section class="parallax-sec">
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="200" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/vista_mesas_low.jpg" data-natural-width="1400" data-natural-height="900">
 		</div>
 		<h2 id="caja-h1">SALONES DE EVENTOS</h2>
 	</section>

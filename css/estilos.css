@@ -1,8 +1,14 @@
 #caja-h1{
 	background-color: white;
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 40px;
 }
 #caja-texto{
 	background-color: white;
+	position: absolute;
+	margin-top: 120px;
+	margin-left: 40px
 }
 body{
 	color: black;
@@ -10,17 +16,34 @@ body{
 h1, h2, h3, article{
 	background-color: white;
 }
+h1{
+
+}
 header { 
-        background: url("../img/texturaroja.jpg"); 
-        height:130px;
+    background: url("../img/texturaroja.jpg"); 
+    width: 100%;
+    height: auto;
+    background-repeat: repeat;
+    position: fixed;
+    z-index: 10;
+
 }
 header .logo{
-	width: 150px;
+	padding-left: 20px;
+}
+header .menu{
+	margin-top: 50px;
+	margin-right: 10px;
+	background-color: transparent;
 }
 footer {
  background: url("../img/texturaamarilla.jpg"); 
  height: 200px;
 }
+.tradicion-sec{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
 .parallax-sec{
-	height: 200px;
+	padding-top: 130px;
 }
