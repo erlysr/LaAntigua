@@ -84,18 +84,28 @@ header .menu{
 article{
 	text-align: justify;
 }
-footer {
- background: url("../img/texturaamarilla.jpg"); 
- height: 200px;
-}
+
 .row{
 	padding-top: 20px;
 }
 .parallax-sec{
 	padding-top: 130px;
 }
-.tradicion-sec{
-	padding-top: 40px;
-	padding-bottom: 60px;
+.contenido-sec{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.contenido-sec .imagen-gal{
+	padding-bottom: 20px;
+}
+footer {
+ 	background: url("../img/texturaamarilla.jpg"); 
+ 	padding-bottom: 10px;
+}
+footer .row{
+	padding-top: 0;
+}
+footer article{
+	background-color: transparent;
 }
 
