@@ -98,6 +98,9 @@ article{
 .contenido-sec .imagen-gal{
 	padding-bottom: 20px;
 }
+.ubicacion-sec{
+	padding-top: 150px;
+}
 footer {
  	background: url("../img/texturaamarilla.jpg"); 
  	padding-bottom: 10px;
@@ -107,5 +110,8 @@ footer .row{
 }
 footer article{
 	background-color: transparent;
+}
+footer .logo-redes{
+	width: 60px;
 }
 
